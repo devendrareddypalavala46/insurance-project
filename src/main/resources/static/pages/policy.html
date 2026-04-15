@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Policy</title>
+</head>
+<body>
+
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "login.html";
+    }
+</script>
+
+<button onclick="goHome()">Back</button>
+
+<h2>Create Policy</h2>
+
+<form onsubmit="savePolicy(event)">
+    Name: <input type="text" id="name"><br><br>
+
+    ```
+    Type:
+    <select id="type">
+        <option value="car">Car</option>
+        <option value="home">Home</option>
+        <option value="life">Life</option>
+    </select><br><br>
+
+    Premium: <input type="number" id="premium"><br><br>
+    Email: <input type="text" id="email"><br><br>
+
+    Business Use:
+    <select id="businessUse">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+    ```
+
+</form>
+
+<p id="msg"></p>
+
+<script>
+    function goHome() {
+        window.location.href = "home.html";
+    }
+
+    function savePolicy(e) {
+        e.preventDefault();
+
+        document.getElementById("msg").innerText = "Policy Saved (UI only)";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #1e293b;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Sidebar items */
+.sidebar li {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    transition: 0.2s;
+}
+
+/* Hover */
+.sidebar li:hover {
+    background: #334155;
+    color: white;
+}
+
+/* Active menu (IMPORTANT FIX) */
+.sidebar li.active {
+    background: linear-gradient(45deg, #6a5af9, #8b7bff);
+    color: white;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Cards */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

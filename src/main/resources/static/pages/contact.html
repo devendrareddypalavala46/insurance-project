@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Manager</title>
+
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <!-- HEADER -->
+    <div class="top-section">
+        <div>
+            <h1>Contact Manager</h1>
+            <p>Manage your contacts and policies</p>
+        </div>
+
+        <div class="top-actions">
+            <input type="text" id="searchId" placeholder="Search by ID">
+            <input type="text" id="searchName" placeholder="Search by Name">
+            <input type="text" id="searchEmail" placeholder="Search by Email">
+
+            <button onclick="searchContacts()">Search</button>
+            <p id="errorMsg" class="error"></p>
+
+            <button id="clearBtn" onclick="clearResults()" style="display:none;">
+                Clear
+            </button>
+
+            <button onclick="openCreateForm()">Create Contact</button>
+        </div>
+    </div>
+
+    <div class="stats">
+
+        <div class="stat-box" onclick="showPolicies()">
+            <p>Total Policies</p>
+            <h2 id="policies">0</h2>
+        </div>
+
+        <div class="stat-box" onclick="showClaims()">
+            <p>Total Claims</p>
+            <h2 id="claims">0</h2>
+        </div>
+
+        <div class="stat-box" onclick="showBalance()">
+            <p>Account Balance</p>
+            <h2 id="accountBalance">0</h2>
+        </div>
+
+    </div>
+
+    <!-- CONTACT CARDS -->
+    <div id="cardContainer" class="cards"></div>
+
+    <!-- TEMPLATE -->
+    <template id="contactTemplate">
+        <div class="card">
+            <div class="info">
+                <p><b>ID:</b> <span class="c-id"></span></p>
+                <p><b>Name:</b> <span class="c-name"></span></p>
+                <p><b>Email:</b> <span class="c-email"></span></p>
+                <p><b>Phone:</b> <span class="c-phone"></span></p>
+                <p><b>Address:</b> <span class="c-address"></span></p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn edit-btn">Edit</button>
+                <button class="btn delete-btn">Delete</button>
+                <button class="btn policy-btn">CreatePolicy</button>
+            </div>
+        </div>
+    </template>
+
+    <div id="formContainer"></div>
+
+</div>
+
+<script src="/js/contact.js"></script>
+
+</body>
+</html>

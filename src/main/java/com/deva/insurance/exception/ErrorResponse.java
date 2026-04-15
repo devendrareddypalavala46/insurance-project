@@ -1,0 +1,21 @@
+package com.deva.insurance.exception;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+public class ErrorResponse {
+
+    private String message;
+    private int status;
+    private LocalDateTime time;
+
+    public ErrorResponse(String message) {
+        this.message = message;
+    }
+
+    public ErrorResponse() {
+    }
+}

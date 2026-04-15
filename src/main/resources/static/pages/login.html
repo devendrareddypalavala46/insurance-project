@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luminary Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="login-box">
+
+        <div class="logo">⚡</div>
+
+        <h1>Luminary</h1>
+        <p>Welcome back! Sign in to continue</p>
+
+        <!-- ✅ FORM START -->
+        <form onsubmit="login(event)" autocomplete="off">
+
+            <!-- Email -->
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="off">
+
+            <!-- Password -->
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" id="password" placeholder="Enter password" autocomplete="new-password">
+                <span onclick="togglePassword()">👁️</span>
+            </div>
+
+            <!-- Options -->
+            <div class="options">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="/pages/forgot.html">Forgot password?</a>
+            </div>
+
+            <!-- ✅ SUBMIT BUTTON -->
+            <button type="submit">Sign In</button>
+
+        </form>
+        <!-- ✅ FORM END -->
+
+        <div class="divider">or continue with</div>
+
+        <div class="social">
+            <button type="button">Google</button>
+            <button type="button">GitHub</button>
+        </div>
+
+        <div class="footer" autocomplete="off">
+            First time here? <a href="/pages/registerUser.html">Create an account</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ✅ JS at bottom -->
+<script src="/js/login.js"></script>
+
+</body>
+</html>

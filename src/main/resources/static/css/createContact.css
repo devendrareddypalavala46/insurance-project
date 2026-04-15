@@ -1,0 +1,62 @@
+/* FULL CENTER FIX */
+.form-wrapper {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    height: calc(100vh - 80px); /* adjust for header/sidebar */
+    width: 100%;
+}
+
+/* FORM BOX */
+.form-box {
+    background: rgba(30, 41, 59, 0.9);
+    padding: 30px;
+    border-radius: 16px;
+    width: 350px;
+    text-align: center;
+}
+
+/* INPUT FIX */
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BUTTON FIX */
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-actions button:first-child {
+    background: linear-gradient(45deg, #6a5af9, #8b7bff);
+    color: white;
+}
+
+.form-actions button:last-child {
+    background: #475569;
+    color: white;
+}
+
+.form-container {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    width: 350px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}

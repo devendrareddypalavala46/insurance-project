@@ -1,0 +1,200 @@
+/* 🌙 Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 📦 Container */
+.contact-container {
+    padding: 30px;
+    color: white;
+}
+
+/* 🔝 Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.top-section h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.top-section p {
+    color: #9ca3af;
+}
+
+/* 🎯 Actions */
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* 🔍 Inputs */
+.top-actions input {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #e5e7eb;
+    outline: none;
+    width: 160px;
+}
+
+/* ➕ Buttons */
+.top-actions button {
+    background: linear-gradient(45deg, #6a5af9, #8b7bff);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.top-actions button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* ❌ Error */
+#errorMsg {
+    color: red;
+}
+
+/* 📊 Stats Section */
+.stats {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 📊 Stat Box */
+.stat-box {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 20px;
+    border-radius: 16px;
+    width: 160px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.stat-box p {
+    margin: 0;
+    color: #9ca3af;
+}
+
+.stat-box h2 {
+    margin: 5px 0 0;
+    font-size: 24px;
+}
+
+/* 🧾 Cards Grid */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 400px));
+    gap: 25px;
+    justify-content: center; /* 🔥 center cards */
+}
+
+/* 🧾 Card */
+.card {
+    background: #f8fafc;
+    color: #111827;
+    padding: 20px;
+    border-radius: 16px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ✨ Selected Card Highlight */
+.card.selected {
+    border: 2px solid #8b7bff;
+    box-shadow: 0 0 20px rgba(139,123,255,0.6);
+}
+
+/* Text */
+.card p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #374151;
+    word-break: break-word;
+}
+
+/* 🎯 Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Buttons inside card */
+.card button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #6a5af9, #8b7bff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    opacity: 0.9;
+}
+
+/* ❌ No Data */
+.no-data {
+    text-align: center;
+    margin-top: 50px;
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .top-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-actions input {
+        width: 100%;
+    }
+}
+
+.stat-box {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    transform: scale(1.05);
+    background: rgba(99, 102, 241, 0.2);
+}

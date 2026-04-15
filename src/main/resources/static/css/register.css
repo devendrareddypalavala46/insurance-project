@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.register-box {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #9ca3af;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+}
+
+.row div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #334155;
+    color: white;
+    margin-top: 5px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.terms {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer a {
+    color: #6366f1;
+}
