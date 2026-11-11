@@ -23,6 +23,8 @@ public class SecurityConfig {
                         .anyRequest().permitAll()
                 );
 
+        //deva
+
 
 
         return http.build();
